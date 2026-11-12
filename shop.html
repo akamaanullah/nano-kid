@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop — Nano Kids</title>
+<meta name="description" content="Nano Kids — considered clothing for newborns to 14 years. Every season, every occasion, and made-to-order custom designs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+<main id="main">
+  <section class="page-hero"><div class="wrap">
+    <div class="crumbs"><span><a href="index.html">Home</a></span><span><a href="shop.html">Shop</a></span><span id="crumbCur">All collections</span></div>
+    <h1 id="shopTitle">All <em>collections</em></h1>
+    <p id="shopDesc"></p>
+  </div></section>
+
+  <div class="wrap shop-layout">
+    <aside class="filters" id="filters" aria-label="Filters"></aside>
+    <div class="filter-footer"><button class="btn btn--ghost" id="filterReset" style="flex:1">Clear</button><button class="btn" id="filterApply" style="flex:2">Show results</button></div>
+
+    <section aria-label="Products">
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <button class="btn btn--ghost btn--sm filter-open" id="filterOpen"><svg class="ico" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg> Filters</button>
+          <span class="result-count" id="resultCount"></span>
+        </div>
+        <div class="toolbar-right">
+          <label class="sr-only" for="sortSel">Sort by</label>
+          <select class="sort-select" id="sortSel">
+            <option value="featured">Featured</option><option value="new">Newest</option><option value="rating">Top rated</option>
+            <option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option>
+          </select>
+          <div class="view-toggle" role="group" aria-label="View">
+            <button class="is-on" data-view="grid" aria-label="Grid view"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5"/><rect x="13.5" y="4" width="6.5" height="6.5"/><rect x="4" y="13.5" width="6.5" height="6.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5"/></svg></button>
+            <button data-view="list" aria-label="List view"><svg class="ico" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="active-filters" id="activeFilters"></div>
+      <div class="products" id="productGrid"></div>
+      <div class="load-more" id="loadMore"><div class="progress-line"></div><p></p><button class="btn btn--ghost" id="loadMoreBtn">Load more</button></div>
+    </section>
+  </div>
+</main>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>

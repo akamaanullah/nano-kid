@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nano Kids — Considered clothing for little people</title>
+<meta name="description" content="Nano Kids — considered clothing for newborns to 14 years. Every season, every occasion, and made-to-order custom designs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">The Winter Edit · 2026</span>
+        <h1><span data-reveal>Dressed for the</span><span data-reveal style="--d:.1s">small <em>adventures.</em></span></h1>
+        <p class="lead" data-reveal style="--d:.2s">Soft, honest, beautifully cut clothing for newborns to fourteen-year-olds — made for every season, every occasion, and made to be handed down.</p>
+        <div class="hero-cta" data-reveal style="--d:.3s">
+          <a class="btn" href="shop.html?sort=new">Shop the edit</a>
+          <a class="btn btn--ghost" href="customize.html">Design your own</a>
+        </div>
+        <div class="hero-meta" data-reveal style="--d:.4s">
+          <div><b>0 – 14</b><span>Years, newborn to junior</span></div>
+          <div><b>4</b><span>Seasons, each considered</span></div>
+          <div><b>Bespoke</b><span>Custom pieces on request</span></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-img hero-img--main" data-reveal="fade"><img id="heroMain" alt="Boy in a navy cardigan and blue shorts"></div>
+        <div class="hero-img hero-img--a" data-reveal="fade" style="--d:.15s"><img id="heroA" alt="Child in a yellow raincoat"></div>
+        <div class="hero-img hero-img--b" data-reveal="fade" style="--d:.3s"><img id="heroB" alt="Girl in a floral dress"></div>
+        <div class="hero-tag" data-reveal style="--d:.6s"><small>Now in store</small><b>Cardigan &amp; short set</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="strip" aria-hidden="true"><div class="strip-track">
+    <span>Organic cotton</span><span>Made to be handed down</span><span>Designed in Lahore</span><span>Gentle on skin</span><span>Custom designs</span><span>Every season, every occasion</span>
+  </div></div>
+
+  <!-- SHOP BY AGE -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <div><span class="eyebrow">Shop by age</span><h2>For every <em>stage</em></h2></div>
+        <a class="link" href="shop.html">View all pieces <svg class="ico" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="age-grid" id="ageGrid"></div>
+    </div>
+  </section>
+
+  <!-- SHOP BY SEASON -->
+  <section class="section section--paper">
+    <div class="wrap season-layout">
+      <div class="season-intro" data-reveal>
+        <span class="eyebrow">Shop by season</span>
+        <h2>Dressed for the <em>weather,</em> whatever it brings</h2>
+        <p class="lead">From linen summers to quilted winters and the festive days in between, each collection is designed around how children actually live.</p>
+      </div>
+      <div class="season-grid" id="seasonGrid"></div>
+    </div>
+  </section>
+
+  <!-- SHOP BY CATEGORY -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head section-head--center" data-reveal>
+        <span class="eyebrow">Shop by category</span><h2>The <em>wardrobe</em>, edited</h2>
+      </div>
+      <div class="cat-row" id="catRow"></div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="section section--tight" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <div><span class="eyebrow">New &amp; loved</span><h2>New <em>arrivals</em></h2></div>
+        <a class="link" href="shop.html?sort=new">Shop all new <svg class="ico" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="products" id="newGrid"></div>
+    </div>
+  </section>
+
+  <!-- EDITORIAL: FESTIVE -->
+  <section class="editorial">
+    <img id="editorialImg" alt="Boy in a waistcoat holding a book">
+    <div class="wrap"><div class="editorial-copy" data-reveal>
+      <span class="eyebrow">Festive / Eid 2026</span>
+      <h2>Made for the <em>big days</em></h2>
+      <p>Hand-finished waistcoats, embroidered kurtas and lawn frocks — pieces that look beautiful in photographs and feel wonderful at the dastarkhwan.</p>
+      <a class="btn btn--light" href="shop.html?season=festive">Shop the Eid edit</a>
+    </div></div>
+  </section>
+
+  <!-- DESIGN YOUR OWN -->
+  <section class="section section--ink">
+    <div class="wrap diy">
+      <div class="diy-visual" data-reveal="fade">
+        <span class="diy-chip diy-chip--1"><i style="--c:#B8654A"></i>Terracotta</span>
+        <span class="diy-chip diy-chip--2">Embroidered name</span>
+        <svg viewBox="0 0 400 440" aria-label="Custom tee preview">
+          <path d="M130 40 L88 56 L32 112 L68 152 L100 130 L100 384 Q100 394 110 394 L290 394 Q300 394 300 384 L300 130 L332 152 L368 112 L312 56 L270 40 Q200 100 130 40 Z" fill="#B8654A"/>
+          <path d="M130 40 Q200 100 270 40" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="9" stroke-linecap="round"/>
+          <path d="M100 384 H300 M68 152 L100 130 M332 152 L300 130" stroke="rgba(0,0,0,.12)" stroke-width="1" fill="none" stroke-dasharray="4 3"/>
+          <text x="200" y="215" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="54" fill="#F7F3EE">Zayan</text>
+          <line x1="150" y1="232" x2="250" y2="232" stroke="#F7F3EE" stroke-opacity=".5" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="diy-copy" data-reveal>
+        <span class="eyebrow">Design your own</span>
+        <h2>Made <em>just</em> for them</h2>
+        <p class="lead">Choose the garment, the fabric and the colour. Add a name, a message or your own artwork. We cut, embroider and finish every piece to order.</p>
+        <ul class="diy-steps">
+          <li><b>01</b><div><h4>Choose a piece</h4><p>Tees, sweatshirts, frocks and kurtas, from 0 months to 14 years.</p></div></li>
+          <li><b>02</b><div><h4>Personalise it</h4><p>Colour, fabric, a name in your choice of lettering, or upload a logo.</p></div></li>
+          <li><b>03</b><div><h4>We craft it</h4><p>Embroidered and printed in our atelier, ready in 7–10 working days.</p></div></li>
+        </ul>
+        <a class="btn btn--light" href="customize.html">Start designing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section section--tight">
+    <div class="wrap"><div class="values" data-reveal>
+      <div class="value"><svg class="ico" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19c3-4 6-6 9-8"/></svg><h4>Gentle fabrics</h4><p>Organic and combed cottons, soft linens and lawn — kind to the most sensitive skin.</p></div>
+      <div class="value"><svg class="ico" viewBox="0 0 24 24"><path d="M3 6.5h11v9H3zM14 10h4l3 3v2.500h-7"/><circle cx="7" cy="17.500" r="1.800"/><circle cx="17" cy="17.500" r="1.800"/></svg><h4>Free delivery</h4><p>Complimentary on orders above Rs. 8,000, with cash on delivery across Pakistan.</p></div>
+      <div class="value"><svg class="ico" viewBox="0 0 24 24"><path d="M4 9h13l-3-3M20 15H7l3 3"/></svg><h4>Easy exchanges</h4><p>Children grow quickly. Exchange any unworn piece within 14 days, no questions.</p></div>
+      <div class="value"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11"/><path d="M3 9h18V6H3zM12 6v14M12 6c-1-3-5-3-4-.5M12 6c1-3 5-3 4-.5"/></svg><h4>Gift-ready</h4><p>Every order arrives in our keepsake box, with a handwritten note on request.</p></div>
+    </div></div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--paper">
+    <div class="wrap">
+      <div class="section-head section-head--center" data-reveal><span class="eyebrow">Kind words</span><h2>Loved by <em>parents</em></h2></div>
+      <div class="testi-grid">
+        <figure class="testi" data-reveal><div class="stars" id="st1"></div><blockquote>“The fabric is unbelievably soft. My daughter wore the smock dress all through Eid and refused to take it off.”</blockquote><figcaption><span class="avatar">A</span><div><b>Ayesha K.</b><span>Lahore · Verified buyer</span></div></figcaption></figure>
+        <figure class="testi" data-reveal style="--d:.1s"><div class="stars" id="st2"></div><blockquote>“We designed matching tees for the boys' birthday. The embroidery was flawless and arrived a day early.”</blockquote><figcaption><span class="avatar">H</span><div><b>Hira S.</b><span>Karachi · Custom order</span></div></figcaption></figure>
+        <figure class="testi" data-reveal style="--d:.2s"><div class="stars" id="st3"></div><blockquote>“Finally, a kids' brand that doesn't look loud. Quietly beautiful, well-made and the sizing is spot on.”</blockquote><figcaption><span class="avatar">O</span><div><b>Omar F.</b><span>Islamabad · Verified buyer</span></div></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="section-head section-head--center" data-reveal><span class="eyebrow">@nanokids</span><h2>In the <em>wild</em></h2></div>
+      <div class="insta" id="insta" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section newsletter">
+    <div class="wrap news-inner">
+      <div data-reveal><span class="eyebrow">The letter</span><h2 style="margin:14px 0 14px">Be the first to <em>know</em></h2><p class="lead" style="margin:0">New collections, restocks and the occasional discount — never more than twice a month.</p></div>
+      <div data-reveal style="--d:.1s">
+        <form class="news-form" data-demo><input type="email" required placeholder="Your email address" aria-label="Email"><button type="submit">Subscribe</button></form>
+        <p class="news-note">By subscribing you agree to our privacy policy. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Hero imagery (kept in HTML so the owner can swap photos easily)
+  document.getElementById('heroMain').src = img(PH.navy, 900, 1260);
+  document.getElementById('heroA').src = img(PH.rain, 600, 690);
+  document.getElementById('heroB').src = img(PH.floral, 600, 480);
+  document.getElementById('editorialImg').src = img(PH.vest, 1800, 1000);
+  [1,2,3].forEach(i => document.getElementById('st'+i).innerHTML = NK.starRow().replace('<span class="stars" aria-hidden="true">','').replace('</span>',''));
+</script>
+</body>
+</html>

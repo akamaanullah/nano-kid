@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Your Own — Nano Kids</title>
+<meta name="description" content="Nano Kids — considered clothing for newborns to 14 years. Every season, every occasion, and made-to-order custom designs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&family=Caveat:wght@600&family=Fraunces:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="customize">
+<main id="main">
+  <section class="page-hero"><div class="wrap">
+    <div class="crumbs"><span><a href="index.html">Home</a></span><span>Design your own</span></div>
+    <h1>Design <em>your own</em></h1>
+    <p>Build a one-of-a-kind piece in six simple steps. Watch it take shape on the right — we cut, embroider and finish every item to order in 7–10 working days.</p>
+  </div></section>
+  <div class="wrap studio">
+    <div class="studio-steps" id="steps"></div>
+    <aside class="preview" aria-label="Live preview">
+      <div class="preview-stage">
+        <div class="view-switch" role="group" aria-label="View"><button class="is-on" data-view="front">Front</button><button data-view="back">Back</button></div>
+        <svg id="previewSvg" viewBox="0 0 400 440" role="img" aria-label="Live preview of your design"></svg>
+        <span class="preview-badge">Live preview</span>
+      </div>
+      <div class="summary">
+        <h4>Your design</h4>
+        <div class="sum-lines" id="sumLines"></div>
+        <div class="sum-qty"><span class="field-label" style="margin:0">Quantity</span>
+          <div class="qty" style="height:42px"><button data-q="-1" aria-label="Decrease"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14"/></svg></button><input type="text" id="sumQty" value="1" readonly aria-label="Quantity" style="width:40px"><button data-q="1" aria-label="Increase"><svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div></div>
+        <div class="sum-total"><span>Total</span><b id="sumTotal"></b></div>
+        <div class="sum-actions"><button class="btn btn--block" id="addCustom">Add to bag</button><button class="btn btn--ghost btn--block" id="quoteBtn">Request a quote</button></div>
+        <p class="sum-note"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg><span id="sumHint"></span></p>
+        <p class="sum-note"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Our team confirms your artwork with you before production. Preview is indicative.</span></p>
+      </div>
+    </aside>
+  </div>
+
+  <div class="modal" id="quoteModal" aria-hidden="true"><div class="modal-scrim" data-close-modal></div><div class="modal-card modal-card--sm">
+    <button class="modal-close" data-close-modal aria-label="Close"><svg class="ico" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+    <p class="eyebrow">Bespoke &amp; bulk orders</p><h2 style="font-size:2.4rem;margin:8px 0 16px">Request a <em>quote</em></h2>
+    <div class="sum-lines" id="quoteSummary" style="margin-bottom:22px"></div>
+    <form data-demo>
+      <div class="field-row"><div class="field"><label for="qn">Your name</label><input id="qn" type="text" required></div><div class="field"><label for="qp">Phone / WhatsApp</label><input id="qp" type="tel" required></div></div>
+      <div class="field"><label for="qe">Email</label><input id="qe" type="email" required></div>
+      <div class="field"><label for="qm">Notes (occasion, quantity, deadline)</label><textarea id="qm"></textarea></div>
+      <button class="btn btn--block" type="submit">Send request</button>
+    </form>
+    <div class="form-success"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><h3>Request received</h3><p class="muted" style="margin:0">Thank you — our design team will reply within one working day with a quote and a mock-up.</p></div>
+  </div></div>
+</main>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/customize.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout — Nano Kids</title>
+<meta name="description" content="Nano Kids — considered clothing for newborns to 14 years. Every season, every occasion, and made-to-order custom designs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+<main id="main">
+  <section class="page-hero"><div class="wrap"><div class="crumbs"><span><a href="index.html">Home</a></span><span><a href="cart.html">Bag</a></span><span>Checkout</span></div><h1>Check<em>out</em></h1></div></section>
+  <div class="wrap checkout-layout" id="checkoutWrap">
+    <form id="checkoutForm" novalidate>
+      <div class="co-step"><h3><span>01</span>Contact</h3>
+        <div class="field"><label for="em">Email</label><input id="em" type="email" required placeholder="you@example.com"></div>
+        <div class="field"><label for="ph">Phone / WhatsApp</label><input id="ph" type="tel" required placeholder="03xx xxxxxxx"></div>
+        <label class="check"><input type="checkbox" checked><span class="box"></span><span>Keep me updated about new collections</span></label></div>
+      <div class="co-step"><h3><span>02</span>Delivery</h3>
+        <div class="field-row"><div class="field"><label for="fn">First name</label><input id="fn" type="text" required></div><div class="field"><label for="ln">Last name</label><input id="ln" type="text" required></div></div>
+        <div class="field"><label for="ad">Address</label><input id="ad" type="text" required placeholder="House / street / area"></div>
+        <div class="field-row"><div class="field"><label for="ct">City</label><select id="ct" required><option value="">Select city</option><option>Lahore</option><option>Karachi</option><option>Islamabad</option><option>Rawalpindi</option><option>Faisalabad</option><option>Multan</option><option>Peshawar</option><option>Other</option></select></div>
+          <div class="field"><label for="pr">Province</label><select id="pr" required><option value="">Select province</option><option>Punjab</option><option>Sindh</option><option>Khyber Pakhtunkhwa</option><option>Balochistan</option><option>Islamabad Capital Territory</option></select></div></div>
+        <p class="field-label sub-label" style="margin-top:8px">Delivery method</p>
+        <div class="pay-opt is-on" style="margin-bottom:10px"><label><span class="check radio" style="pointer-events:none"><input type="radio" name="ship" value="standard" checked><span class="box"></span></span><span><b>Standard delivery</b><small>3–5 working days</small></span><span class="tag">Free above Rs. 8,000</span></label></div>
+        <div class="pay-opt"><label><span class="check radio" style="pointer-events:none"><input type="radio" name="ship" value="express"><span class="box"></span></span><span><b>Express delivery</b><small>1–2 working days · major cities</small></span><span class="tag">+ Rs. 450</span></label></div></div>
+      <div class="co-step"><h3><span>03</span>Payment</h3>
+        <div class="pay-opt"><label><span class="check radio" style="pointer-events:none"><input type="radio" name="pay" value="cod" checked><span class="box"></span></span><span><b>Cash on delivery</b><small>Pay when your order arrives</small></span><span class="tag">Popular</span></label></div><div class="pay-opt"><label><span class="check radio" style="pointer-events:none"><input type="radio" name="pay" value="card" ><span class="box"></span></span><span><b>Credit / debit card</b><small>Visa, Mastercard</small></span><span class="tag">Secure</span></label><div class="pay-extra"><div class="field"><label for="cn">Card number</label><input id="cn" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000"></div><div class="field-row"><div class="field"><label for="ce">Expiry</label><input id="ce" type="text" placeholder="MM / YY"></div><div class="field"><label for="cc">CVC</label><input id="cc" type="text" placeholder="123"></div></div><p class="muted" style="font-size:.76rem;margin:0">Demo UI — no payment is processed.</p></div></div><div class="pay-opt"><label><span class="check radio" style="pointer-events:none"><input type="radio" name="pay" value="wallet" ><span class="box"></span></span><span><b>JazzCash / Easypaisa</b><small>Pay from your mobile wallet</small></span><span class="tag"></span></label><div class="pay-extra"><p class="muted" style="font-size:.85rem;margin:0">You will receive a payment request on your registered number after placing the order.</p></div></div><div class="pay-opt"><label><span class="check radio" style="pointer-events:none"><input type="radio" name="pay" value="bank" ><span class="box"></span></span><span><b>Bank transfer</b><small>Details shared after you order</small></span><span class="tag"></span></label></div>
+      </div>
+      <button class="btn btn--block" type="submit" style="height:56px">Place order</button>
+      <p class="muted" style="font-size:.78rem;text-align:center;margin-top:14px">By placing your order you agree to our terms and returns policy.</p>
+    </form>
+    <aside class="summary-card"><h3>Your order</h3><div class="co-items" id="coItems"></div><div id="coSummary"></div>
+      <a class="link" href="cart.html" style="margin-top:20px">Edit bag</a></aside>
+  </div>
+  <div class="order-done" id="orderDone"><div class="check-ring"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div><span class="eyebrow">Order <span id="orderNo">NK-000000</span></span>
+    <h1 style="margin-top:14px">Thank <em>you</em></h1><p class="lead" style="margin:0 auto 30px">Your order has been received. We'll send a confirmation and tracking details by WhatsApp and email shortly.</p>
+    <a class="btn" href="index.html">Back to home</a></div>
+</main>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

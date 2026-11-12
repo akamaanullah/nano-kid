@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product — Nano Kids</title>
+<meta name="description" content="Nano Kids — considered clothing for newborns to 14 years. Every season, every occasion, and made-to-order custom designs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="product">
+<main id="main">
+  <div class="wrap" style="padding-top:28px"><div class="crumbs" id="crumb"></div></div>
+  <div class="wrap pdp">
+    <div class="pdp-gallery">
+      <div class="thumbs" id="pdpThumbs"></div>
+      <div class="pdp-main" id="pdpMain"><img alt=""></div>
+    </div>
+    <div class="pdp-info">
+      <span class="eyebrow" id="pdpEyebrow"></span>
+      <h1 id="pdpTitle"></h1>
+      <div class="pdp-price" id="pdpPrice"></div>
+      <div class="pdp-rating" id="pdpRating"></div>
+      <p class="pdp-desc" id="pdpDesc"></p>
+      <div id="pdpOptions"></div>
+      <div class="opt"><div class="opt-head"><span class="field-label">Quantity</span></div><div id="pdpQty"></div></div>
+      <div class="buy-row">
+        <button class="btn" id="pdpAdd">Add to bag</button>
+        <button class="wish-btn" id="pdpWish" aria-label="Add to wishlist"><svg class="ico" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.5 2.4C19.5 15.4 12 20 12 20z"/></svg></button>
+      </div>
+      <ul class="perks">
+        <li><svg class="ico" viewBox="0 0 24 24"><path d="M3 6.5h11v9H3zM14 10h4l3 3v2.5h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>Free delivery above Rs. 8,000 · Ships in 2–4 working days</li>
+        <li><svg class="ico" viewBox="0 0 24 24"><path d="M4 9h13l-3-3M20 15H7l3 3"/></svg>Free exchanges within 14 days</li>
+        <li><svg class="ico" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19c3-4 6-6 9-8"/></svg>Soft, skin-friendly fabrics, pre-washed</li>
+      </ul>
+      <div class="accordion">
+        <div class="acc-item"><button class="acc-btn" aria-expanded="true">Description<svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button><div class="acc-panel"><div id="accDesc"></div></div></div>
+        <div class="acc-item"><button class="acc-btn" aria-expanded="false">Fabric &amp; care<svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button><div class="acc-panel"><div><ul><li>Cotton-rich fabrics, pre-washed to minimise shrinkage</li><li>Machine wash cold with similar colours</li><li>Tumble dry low or line dry in shade</li><li>Iron on low heat, inside out</li></ul></div></div></div>
+        <div class="acc-item"><button class="acc-btn" aria-expanded="false">Delivery &amp; returns<svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button><div class="acc-panel"><div><p>Orders ship within 2–4 working days across Pakistan; cash on delivery is available in all major cities. Unworn pieces with tags may be exchanged within 14 days.</p></div></div></div>
+        <div class="acc-item"><button class="acc-btn" aria-expanded="false">Sizing<svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button><div class="acc-panel"><div><p>Our pieces are cut to allow room to grow. Between sizes, choose the larger. <a class="link" href="#" data-size-guide>Open size guide</a></p></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--paper">
+    <div class="wrap">
+      <div class="section-head" data-reveal><div><span class="eyebrow">You may also like</span><h2>Complete the <em>look</em></h2></div><a class="link" href="shop.html">Shop all</a></div>
+      <div class="products" id="related"></div>
+    </div>
+  </section>
+  <div class="sticky-buy" id="stickyBuy"></div>
+</main>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
